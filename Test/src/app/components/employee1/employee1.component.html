@@ -1,0 +1,24 @@
+
+
+<div class='container'>
+  <h2  ><b><i>Employee1 Component </i></b></h2>
+<table   border="1px" class="table table-bordered" >
+  <tr>
+   <td width="75%" colspan="3"><div class="input-group mb-3">
+    <span class=" input-group-text material-icons">person_search</span>
+      <input type="text" class="form-control" [(ngModel)]="find" >
+
+    </div>
+   </td>
+    </tr>
+  <tr  *ngIf="employees.length!=0"><th>ID: </th><th>Name </th><th>Salary</th></tr>
+  <tr ngColor *ngFor="let employee of employees|search:find">
+      <td >{{employee.empId}}&nbsp;</td>
+      <td>{{employee.empName|titlecase}}&nbsp;</td>
+      <td>{{employee.empSal |currency:'INR'}}{{"/-"}}&nbsp;</td>
+  </tr>
+
+</table>
+</div>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br>

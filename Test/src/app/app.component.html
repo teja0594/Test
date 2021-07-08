@@ -1,0 +1,18 @@
+<div class="whole">
+  <br><br>
+  <div class="container" align="center">
+    <!-- <a routerLink='' (click)="change2()" routerLinkActive='active'>Home</a> | -->
+ <h5> <a routerLink='/emp1' (click)="change()" routerLinkActive='active'>Employee1</a> |
+  <a routerLink='/emp2' (click)="change()" routerLinkActive='active'>Employee2</a></h5>
+  <hr>
+  <router-outlet></router-outlet>
+  </div>
+  <div *!ngIf="flag">
+    <br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+
+  </div>
+
+</div>
+
